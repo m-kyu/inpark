@@ -1,0 +1,60 @@
+.search {
+  width: 100%;
+  .search-box {
+    width: 100%;
+    height: 6.3vh;
+    margin-top: 5%;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    input[type="text"] {
+      width: calc(100% - 60px);
+      height: 6.3vh;
+      margin: 0;
+      padding: 0 1.26vh 0 6.3vh;
+      border: none;
+      outline: none;
+      box-shadow: none;
+      background-color: black;
+      // background: no-repeat left 1.26vh center / 3.78vh url("../search.svg");
+      // background-repeat: no-repeat;
+      // background-position: left 1.26vh center;
+      // background-size: 3.78vh;
+      // background-image: url("../search.svg");
+      font-size: 4vw;
+      color: #a0a0a0;
+    }
+    > ul {
+      width: 100%;
+      padding: 2%;
+      box-sizing: border-box;
+      color: white;
+      position: absolute;
+      top: 100%;
+      z-index: 500;
+      li {
+        padding: 2%;
+        border-bottom: 1px solid gray;
+        background-color: black;
+        box-sizing: border-box;
+      }
+    }
+    button {
+      width: 60px;
+      height: 100%;
+      padding: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      box-shadow: none;
+      overflow: hidden;
+      img {
+        width: 80%;
+        object-fit: cover;
+      }
+    }
+  }
+}
